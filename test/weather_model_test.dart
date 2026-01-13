@@ -44,7 +44,7 @@ void main() {
 
       // 2. Act: Simulate real JSON decoding
       var Weather;
-      final weather = Weather.fromJson(jsoSn.decode(json.encode(jsonMap)));
+      final weather = Weather.fromJson(json.decode(json.encode(jsonMap)));
 
       // 3. Assert: Check if the fields are correctly parsed
       expect(weather.cityName, 'Manila');
